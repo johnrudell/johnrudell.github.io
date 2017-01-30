@@ -1,15 +1,19 @@
 @import "variables";
 
-body {
+
+html, body {
   font-size: 40px;
   margin: 0 auto;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
+  width: 100%;
+  height: 100%;
+
 }
 
 /* Navigation Bar */
 
 .navbar-custom {
-  background: $primary-color;
+  background: transparent;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
@@ -17,37 +21,37 @@ body {
     outline: none;
   }
   .navbar-brand {
-    color: white;
+    color: $third-color;
     &:hover,
     &:focus,
     &:active,
     &.active {
-      color: white;
+      color: $third-color;
     }
   }
   .navbar-nav {
     letter-spacing: 1px;
     li {
       a {
-        color: white;
+        color: $primary-color;
         &:hover {
-          color: $secondary-color;
+          color: white;
           background-color: $primary-color;
           outline: none;
         }
         &:focus,
         &:active {
-          color: white;
+          color: $third-color;
         }
       }
       &.active {
         a {
-          color: white;
+          color: $third-color;
           background: $secondary-color;
           &:hover,
           &:focus,
           &:active {
-            color: white;
+            color: $third-color;
             background: $secondary-color;
           }
         }
@@ -55,14 +59,14 @@ body {
     }
   }
   .navbar-toggle {
-    color: white;
+    color: $third-color;
     text-transform: uppercase;
     font-size: 10px;
-    border-color: white;
+    border-color: $third-color;
     &:hover,
     &:focus {
       background-color: $secondary-color;
-      color: white;
+      color: $third-color;
       border-color: $secondary-color;
     }
   }
@@ -84,8 +88,8 @@ body {
     .navbar-custom.affix {
         padding: 10px 0;
     .navbar-brand {
-          font-size: 1.5em;
-      }
+        font-size: 1.5em;
+    }
   }
 }
 
@@ -93,48 +97,42 @@ body {
 
 header {
   text-align: center;
-  background: $secondary-color;
-  color: white;
-  .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
-  }
-  img {
-    display: block;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    border: 10px solid $primary-color;
-    width: 50%;
-    height: auto;
-  }
-  .intro-text {
-    .name {
-      display: block;
-  
-      text-transform: uppercase;
+  // display: table;
+  // background: $secondary-color;
+  color: $fourth-color;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  .text-vertical-center{
+    // display: table-cell;
+    vertical-align: middle;
+    h1 {
+      margin: 0 auto;
+      padding-top: 25%;
+      text-align: center;
+      font-size: 4.5em;
       font-weight: 700;
-      font-size: 2em;
     }
-    .skills {
-      font-size: 1.25em;
-      font-weight: 300;
 
-    }
   }
 }
 
-@media(min-width:768px) {
+@media(max-width:768px) {
   header {
-    .container {
-      padding-top: 200px;
-      padding-bottom: 100px;
-    }
-    .intro-text {
-      .name {
-        font-size: 4.75em;
+    .text-vertical-center{
+        padding-top: 200px;
+        padding-bottom: 100px;
+      h1 {
+        font-size: 3em;
+        margin-top: 20px;
       }
-      .skills {
-        font-size: 1.75em;
+      h3 {
+        font-size: 1em;
       }
     }
   }
@@ -152,13 +150,13 @@ section {
 
 section.about {
   background: $secondary-color;
-  color: white;
+  color: $third-color;
   p {
       font-size: 20px;
   
   }
   .btn {
-    color: white;
+    color: $third-color;
     font-size: 18px;
 
     background-color: $primary-color;
@@ -214,12 +212,12 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: white;
+    border-color: $third-color;
 }
 
 hr.star-light:after {
     background-color: $secondary-color;
-    color: white;
+    color: $third-color;
 }
 
 hr.star-primary {
@@ -227,7 +225,7 @@ hr.star-primary {
 }
 
 hr.star-primary:after {
-    background-color: white;
+    background-color: $third-color;
     color: $primary-color;
 }
 
@@ -267,7 +265,7 @@ hr.star-primary:after {
                     text-align: center;
                     top: 50%;
                     margin-top: -12px;
-                    color: white;
+                    color: $third-color;
                     i {
                         margin-top: -12px;
                     }
@@ -298,10 +296,16 @@ hr.star-primary:after {
 footer {
   font-size: 20px;
   background-color: $primary-color;
-  color: white;
+  color: $third-color;
   padding-bottom: 30px;
   ul {
     padding-top: 40px;
+    a {
+      color: $third-color;
+    }
+    a:hover{
+      color: $secondary-color;
+    }
   }
 }
 
