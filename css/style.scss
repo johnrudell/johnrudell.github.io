@@ -180,9 +180,15 @@ section.about {
       font-size: 18px;
   }
   .btn {
-    color: rgb(208,157,255);
+    color: $third-color;
     font-size: 18px;
     margin-top: 1px;
+    &.viewResume {
+      color: #FF9AD6;
+      &:hover {
+        background-color: #FF9AD6;
+      }
+    }
     &:hover {
       color: $primary-color;
       background-color: rgb(220, 220, 220);

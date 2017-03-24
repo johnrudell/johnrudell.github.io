@@ -123,9 +123,13 @@ section.about {
   section.about p {
     font-size: 18px; }
   section.about .btn {
-    color: #d09dff;
+    color: white;
     font-size: 18px;
     margin-top: 1px; }
+    section.about .btn.viewResume {
+      color: #FF9AD6; }
+      section.about .btn.viewResume:hover {
+        background-color: #FF9AD6; }
     section.about .btn:hover {
       color: #403D3C;
       background-color: gainsboro; }
