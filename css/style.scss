@@ -26,12 +26,6 @@ html, body {
   .navbar-brand {
     color: $primary-color;
     margin-top: -2px;
-    &:hover,
-    &:focus,
-    &:active,
-    &.active {
-      background-color: rgb(220, 220, 220);
-    }
   }
   .navbar-nav {
     letter-spacing: 1px;
@@ -40,7 +34,6 @@ html, body {
       a {
         color: $primary-color;
         &:hover {
-          // background-color: rgb(220, 220, 220);
           outline: none;
         }
         &:focus,
@@ -86,7 +79,6 @@ html, body {
           -webkit-transition: all 0.3s;
           -moz-transition: all 0.3s;
           transition: all 0.3s;
-
       }
     }
     .navbar-custom.affix {

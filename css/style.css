@@ -19,8 +19,6 @@ html, body {
   .navbar-custom .navbar-brand {
     color: #403D3C;
     margin-top: -2px; }
-    .navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:active, .navbar-custom .navbar-brand.active {
-      background-color: gainsboro; }
   .navbar-custom .navbar-nav {
     letter-spacing: 1px;
     margin-top: -1px; }
