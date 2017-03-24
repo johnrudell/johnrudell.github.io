@@ -10,23 +10,26 @@ html, body {
   background: transparent;
   text-transform: uppercase;
   font-weight: 700;
-  border: none; }
+  border: none;
+  height: 68px; }
+  .navbar-custom .container {
+    margin-top: -13px; }
   .navbar-custom a:focus {
     outline: none; }
   .navbar-custom .navbar-brand {
-    color: white; }
+    color: #403D3C;
+    margin-top: -2px; }
     .navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:active, .navbar-custom .navbar-brand.active {
-      color: white; }
+      background-color: gainsboro; }
   .navbar-custom .navbar-nav {
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    margin-top: -1px; }
     .navbar-custom .navbar-nav li a {
       color: #403D3C; }
       .navbar-custom .navbar-nav li a:hover {
-        color: white;
-        background-color: #403D3C;
         outline: none; }
       .navbar-custom .navbar-nav li a:focus, .navbar-custom .navbar-nav li a:active {
-        color: white; }
+        color: gainsboro; }
     .navbar-custom .navbar-nav li.active a {
       color: white;
       background: #A69C9A; }
@@ -34,16 +37,31 @@ html, body {
         color: white;
         background: #A69C9A; }
   .navbar-custom .navbar-toggle {
-    color: white;
+    color: #403D3C;
     text-transform: uppercase;
     font-size: 10px;
-    border-color: white; }
+    border-color: #403D3C; }
     .navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
-      background-color: #A69C9A;
-      color: white;
-      border-color: #A69C9A; }
+      background-color: white;
+      opacity: 0.8; }
 
 @media (min-width: 768px) {
+  .navbar-custom {
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s; }
+    .navbar-custom .navbar-brand {
+      font-size: 2em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+
+  .navbar-custom.affix {
+    padding: 10px 0; }
+    .navbar-custom.affix .navbar-brand {
+      font-size: 1.5em; } }
+@media (max-width: 768px) {
   .navbar-custom {
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
@@ -94,20 +112,23 @@ section {
   padding: 100px 0; }
   section h2 {
     margin: 0;
-    font-size: 3em; }
+    font-size: 3em;
+    text-transform: none; }
 
 section.about {
-  background: #A69C9A;
-  color: white; }
+  background: #403D3C;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 1px; }
   section.about p {
-    font-size: 20px; }
+    font-size: 18px; }
   section.about .btn {
-    color: white;
+    color: #d09dff;
     font-size: 18px;
-    background-color: #403D3C;
-    margin-top: 20px; }
+    margin-top: 1px; }
     section.about .btn:hover {
-      color: #A69C9A; }
+      color: #403D3C;
+      background-color: gainsboro; }
 
 @media (max-width: 767px) {
   section {
@@ -126,39 +147,6 @@ a.active {
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: 700; }
-
-hr.star-light,
-hr.star-primary {
-  padding: 0;
-  border: none;
-  border-top: solid 5px;
-  text-align: center;
-  max-width: 250px;
-  margin: 25px auto 30px; }
-
-hr.star-light:after,
-hr.star-primary:after {
-  content: "\f005";
-  font-family: FontAwesome;
-  display: inline-block;
-  position: relative;
-  top: -0.8em;
-  font-size: 2em;
-  padding: 0 0.25em; }
-
-hr.star-light {
-  border-color: white; }
-
-hr.star-light:after {
-  background-color: #A69C9A;
-  color: white; }
-
-hr.star-primary {
-  border-color: #403D3C; }
-
-hr.star-primary:after {
-  background-color: white;
-  color: #403D3C; }
 
 .img-centered {
   margin: 0 auto; }
@@ -206,18 +194,21 @@ hr.star-primary:after {
     margin: 0 0 30px; } }
 /* Footer */
 footer {
-  font-size: 20px;
-  background-color: #403D3C;
-  color: white;
-  padding-bottom: 30px; }
+  font-size: 12px;
+  background-color: white;
+  color: #403D3C;
+  padding-bottom: 5px; }
   footer ul {
-    padding-top: 40px; }
+    padding-top: 12px; }
     footer ul a {
-      color: white; }
+      color: #403D3C; }
     footer ul a:hover {
       color: #A69C9A; }
 
 /* Portfolio Modals */
+#portfolioModal5 h2 {
+  text-transform: none; }
+
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
@@ -231,7 +222,8 @@ footer {
     margin: 0;
     font-size: 3em; }
   .portfolio-modal .modal-content img {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    margin-top: 10px; }
   .portfolio-modal .modal-content .item-details {
     margin: 30px 0; }
     .portfolio-modal .modal-content .item-details a {
