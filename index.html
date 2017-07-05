@@ -63,19 +63,19 @@
 
         <!-- Portfolio Grid Section -->
     <section id="portfolio">
-        <div class="container">
-            <div class="row">
+<!--         <div class="container"> -->
+<!--             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Portfolio</h2>
                     <br>
                 </div>
-            </div>
-            <div class="row">
+            </div> -->
+            <div class="">
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                                <p>Mobile app that brings people together.</p>
                             </div>
                         </div>
                         <img src="images/colors.png" class="img-responsive" alt="">
@@ -85,27 +85,27 @@
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                                <p>Hotel website for bookings in a townhouse.</p>
                             </div>
                         </div>
-                        <img src="images/snip.png" class="img-responsive" alt="">
+                        <img src="images/haminn-full1.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                                <p>Online portfolio showcasing data visualizations.</p>
                             </div>
                         </div>
-                        <img src="images/tarot.png" class="img-responsive" alt="">
+                        <img src="images/MS-full.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                                <p>News outlet focusing on celebrity gossip.</p>
                             </div>
                         </div>
                         <img src="images/dishh-zoom.png" class="img-responsive" alt="">
@@ -115,24 +115,24 @@
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                                <p>Workshops and bootcamps for those who want to learn to code like pros.</p>
                             </div>
                         </div>
-                        <img src="images/beginner.png" class="img-responsive" alt="">
+                        <img src="images/begPro.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                                <p>Mobile app that features a potluck checklist for events.</p>
                             </div>
                         </div>
                         <img src="images/byop-zoom.png" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
-        </div>
+<!--         </div> -->
     </section>
 
     <!-- About Section -->
@@ -186,8 +186,11 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Colors</h2>
-                            <img src="images/colors.png" class="img-responsive img-centered" alt="">
-                            <p>Colors is a mobile app available for both the Android and iOS. After choosing your city and party preferences, the app will send you push notifications of Colors events that pop up near you. Using React Native, I transformed the designers' images into working screens.</p>
+                            <div class="modal-img">
+                                <img src="images/colors.png" class="img-responsive img-centered img1" alt="">
+                                <img src="images/mobile/colors.png" class="img-responsive img-centered img2" alt="">
+                            </div>
+                            <p>Colors is a mobile app available for both the Android and iOS. After choosing your city and party preferences, the app will send you push notifications of Colors events that pop up near you. Using React Native, I transformed the designer's images into working screens.</p>
                             <p class="list-inline item-details"><a href="https://www.colorsworldwide.com/app">Visit me!</a></p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -208,9 +211,13 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Mr. Snip</h2>
-                            <img src="images/snip.png" class="img-responsive img-centered" alt="">
-                            <p>Mr. Snip is the Uber of haircuts. My main duties include coding the designer's images into functional screens using React Native. I am building the HTML and CSS of the screens using JavaScript objects. Xcode is used to test and debug the app on my computer and phone. I am constantly pushing and pulling to Git using Sourcetree. I am working with the senior Developer, adding node packages and debugging any problems.</p>
+                            <h2>Hamilton Inn</h2>
+                            <div class="modal-img">
+                                <img src="images/haminn-full1.png" class="img-responsive img-centered img1" alt="">
+                                <img src="images/mobile/haminn.png" class="img-responsive img-centered img2" alt="">
+                            </div>
+                            <p>Hamilton Inn is a website for guests to make inquiries to stay in a five-story townhouse in Manhattan, New York. Using Bootstrap and SCSS, I responsively built and designed haminn.com. The blueprint of the house was built with D3.js and SVGs. Using Google Forms, visitors can make inquiries based on their travel plans. These inquiries are sent via email and through slack to the administrators.</p>
+                            <p class="list-inline item-details"><a href="http://haminn.com/">Visit me!</a></p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -230,10 +237,13 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Arcana</h2>
-                            <img src="images/tarot.png" class="img-responsive img-centered" alt="">
-                            <p>Arcana is a Tarot card game composed of the Major Arcana of a Tarot deck. It is a clickable three-card spread that randomly displays a card and its corresponding description for one's past,  present, and future. It was built using JavaScript and jQuery to create an array of cards and a function to randomly deal a card and its corresponding description. I also added a chance for the card to display upside down which would give a negative reading.</p>
-                            <p class="list-inline item-details"><a href="http://johnrudell.github.io/Arcana/">Visit me!</a></p>
+                            <h2>Portfolio - Matthew Steele</h2>
+                            <div class="modal-img">
+                                <img src="images/MS-full.png" class="img-responsive img-centered img1" alt="">
+                                <img src="images/mobile/MS.png" class="img-responsive img-centered img2" alt="">
+                            </div>
+                            <p>This portfolio is built for Matthew Steele, an urban economist with data visualization skills. The entire background is composed of D3.js to create hoverable circles that display Asia's population densities in 2000 and 2010. His summary consists of nested icons and information, resolved with JavaScript, jQuery, and JSON. There are also samples of his work as a data scientist composed in Bootstrap modals.</p>
+                            <p class="list-inline item-details"><a href="http://matsteele.com/">Visit me!</a></p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -254,8 +264,11 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Dishh</h2>
-                            <img src="images/dishh.png" class="img-responsive img-centered" alt="">
-                            <p>Dishh is a media website coded from a jpg file. Using media queries, the website is completely mobile responsive.</p>
+                            <div class="modal-img">
+                                <img src="images/dishh.png" class="img-responsive img-centered img1" alt="">
+                                <img src="images/mobile/dishh.png" class="img-responsive img-centered img2" alt="">
+                            </div>
+                            <p>Dishh is a media website presenting news on the latest celebrity gossip. It is coded directly from a jpg file. Using media queries, the website is completely mobile responsive.</p>
                             <p class="list-inline item-details"><a href="http://johnrudell.github.io/mediaWebsite/">Visit me!</a></p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -277,8 +290,11 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>beginnerProgrammers</h2>
-                            <img src="images/beginner.png" class="img-responsive img-centered" alt="">
-                            <p>BeginnerProgrammers is a coding bootcamp offering courses in Full Stack Web Development as well as Android Development. I helped build the website, primarily the form page, using HTML and CSS. I am also an alumni of this school :].</p>
+                            <div class="modal-img">
+                                <img src="images/begPro.png" class="img-responsive img-centered img1" alt="">
+                                <img src="images/mobile/begPro.png" class="img-responsive img-centered img2" alt="">
+                            </div>
+                            <p>beginnerProgrammers offers workshops and bootcamps in Full Stack Web Development as well as Android Development. I helped build the website, primarily the form page, using HTML and CSS. I am also a proud alumni of the Full Stack Web Development bootcamp.</p>
                             <p class="list-inline item-details"><a href="http://www.beginnerprogrammers.nyc/">Visit me!</a></p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -300,7 +316,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>BYOP</h2>
-                            <img src="images/byop-zoom.png" class="img-responsive img-centered" alt="">
+                            <img src="images/byop-zoom.png" class="img-responsive img-centered singlePic" alt="">
                             <p>BYOP (Bring Your Own Party) is a potluck checklist mobile app for you and your party guests. It was built with React Native. I built a functional login screen that signs you in and navigates you to a browse page with a side pullout menu. It can also navigate to registration and forgot password pages.</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>

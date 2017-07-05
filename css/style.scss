@@ -177,6 +177,9 @@ section.about {
   color: $third-color;
   font-family: 'Open Sans Condensed', sans-serif;
   letter-spacing: 1px;
+  h2 {
+    margin-top: 5%;
+  }
   p {
       font-size: 18px;
   }
@@ -193,6 +196,15 @@ section.about {
     &:hover {
       color: $primary-color;
       background-color: rgb(220, 220, 220);
+    }
+  }
+}
+
+
+@media only screen and (min-width: 767px) and (max-width: 1200px) {
+  section.about {
+    h2 {
+      margin-top: 40%;
     }
   }
 }
@@ -227,13 +239,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Portfoloio */
 
 #portfolio {
+    padding: 0;
     .portfolio-item {
-        margin: 0 0 15px;
+        margin: 0 !important;
         right: 0;
+        padding: 0;
         .portfolio-link {
             display: block;
             position: relative;
-            max-width: 400px;
+            // max-width: 400px;
             margin: 0 auto;
             .caption {
                 background: fade($secondary-color, 90%);
@@ -246,7 +260,7 @@ h1, h2, h3, h4, h5, h6 {
                 -moz-transition: all ease 0.5s;
                 &:hover {
                     opacity: 0.9;
-                    background: $primary-color;
+                    background-color: $third-color;
                 }
                 .caption-content {
                     position: absolute;
@@ -254,9 +268,10 @@ h1, h2, h3, h4, h5, h6 {
                     height: 20px;
                     font-size: 20px;
                     text-align: center;
-                    top: 50%;
+                    top: 40%;
                     margin-top: -12px;
-                    color: $third-color;
+                    padding: 0 15px 0 15px;
+                    color: $primary-color;
                     i {
                         margin-top: -12px;
                     }
@@ -279,6 +294,20 @@ h1, h2, h3, h4, h5, h6 {
             margin: 0 0 30px;
         }
     }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  #portfolio {
+    .portfolio-item {
+      .portfolio-link {
+        .caption {
+          .caption-content {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -317,11 +346,31 @@ footer {
       min-height: 100%;
       padding: 100px 0;
       text-align: center;
+      background-color: rgba(255,255,255,0.9);
+      margin-right: -17px;
     h2 {
         margin: 0;
-        font-size: 3em;
+        font-size: 2em;
     }
-    img {
+    .modal-img {
+      display: inline-block;
+      margin-top: 5px;
+        img {
+        margin-bottom: 30px;
+        margin-top: 10px;
+        display: inline-block;
+      }
+        .img1 {
+          float: left;
+          width: 73%;
+        }
+        .img2 {
+          width: 22%;
+          float: right;
+
+        }
+    }
+    .singlePic {
       margin-bottom: 30px;
       margin-top: 10px;
     }
@@ -336,7 +385,7 @@ footer {
         position: absolute;
         width:75px;
         height:75px;
-        background-color:transparent;
+        background-color: transparent;
         top: 25px;
         right: 25px;
         cursor: pointer;
@@ -347,7 +396,7 @@ footer {
             height:75px;
             width:1px;
             margin-left:35px;
-            background-color:$primary-color;
+            background-color:$primary-color !important;
             transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             /* IE 9 */
@@ -357,7 +406,8 @@ footer {
             .rl {
                 height:75px;
                 width:1px;
-                background-color:$primary-color;
+                // margin-left: 35px;
+                background-color:$primary-color !important;
                 transform: rotate(90deg);
                 -ms-transform: rotate(90deg);
                 /* IE 9 */
@@ -372,3 +422,17 @@ footer {
       display: none;
     }
 }
+
+@media (min-width: 992px) {
+  .modal-content {
+    .container {
+      width: 1000px;
+    }
+  }
+}
+
+// @media only screen and (max-width:900px) and (min-width: 253px) {
+//  .modal-content {
+//   margin-right: -17px;
+//  }
+// }
