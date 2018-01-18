@@ -1,9 +1,10 @@
-$(document).ready(function(){       
+// navbar transition
+$(document).ready(function(){
    var scroll_start = 0;
-   var startchange = $('#portfolio');
+   var startchange = $('#header');
    var offset = startchange.offset();
     if (startchange.length){
-   $(document).scroll(function() { 
+   $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
           $(".navbar-custom").css({'background-color': 'white', 'border-bottom': '1px solid black'});
@@ -16,4 +17,12 @@ $(document).ready(function(){
        }
    });
     }
+});
+
+// smooth scrolling
+$('.link-goto').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
 });
