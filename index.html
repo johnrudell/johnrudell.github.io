@@ -46,7 +46,7 @@
                         <a class="link-goto" href="#aboutGoto">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a class="link-goto" href="pdfs/resume-johnrudell.pdf">Resume</a>
+                        <a class="link-goto" href="pdfs/johnrudell-formatted.pdf">Resume</a>
                     </li>
                     <!-- <li class="page-scroll">
                         <a href="mailto:johnjrudell@gmail.com" >Email</a>
@@ -61,7 +61,7 @@
     <!-- Header -->
     <header id="header">
         <div class="text-vertical-center">
-            <h1>John Rudell</h1>
+            <h1 class="navbar-hook">John Rudell</h1>
             <h3>Software Engineer</h3>
         </div>
     </header>
@@ -153,10 +153,10 @@
           <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
               <div class="caption">
                   <div class="caption-content">
-                      <p>Mobile app that brings people together.</p>
+                      <p>Investment Club visualization with data pulled from Google Spreadsheets.</p>
                   </div>
               </div>
-              <img src="https://s3.amazonaws.com/johnrudell-port-dev/desktop/colors-d.png" class="img-responsive" alt="Colors">
+              <img src="https://s3.amazonaws.com/johnrudell-port-dev/desktop/sentinel-d.png" class="img-responsive" alt="Sentinel">
           </a>
       </div>
     </section>
@@ -186,7 +186,7 @@
               </a>
           </div>
           <div class="about-link">
-              <a href="pdfs/resume-johnrudell.pdf" class="btn btn-lg btn-outline view-resume">VIEW RESUME</a>
+              <a href="pdfs/johnrudell-formatted.pdf" class="btn btn-lg btn-outline view-resume">VIEW RESUME</a>
           </div>
         </div>
     </section>
@@ -366,14 +366,15 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                          <h2>Colors</h2>
+                          <h2>Sentinel</h2>
                           <div class="modal-img">
-                              <img src="https://s3.amazonaws.com/johnrudell-port-dev/desktop/colors-d.png" class="img-responsive img-centered img1" alt="Colors">
-                              <img src="https://s3.amazonaws.com/johnrudell-port-dev/mobile/colors-m.png" class="img-responsive img-centered img2" alt="Colors Mobile">
+                              <img src="https://s3.amazonaws.com/johnrudell-port-dev/desktop/sentinel-d.png" class="img-responsive img-centered single-img" alt="Sentinel">
                           </div>
-                          <p>Colors is a mobile app available for both Android and iOS. After choosing your city and party preferences, the app will send you push notifications of Colors events that pop up near you. Using React Native with a focus on CSS, I transformed the designer's images into functional screens.</p>
+                          <p>Sentinel is a web app that pulls data from Google Spreadsheets real time using Tabletop.js. This data represents Genus Holding Co.'s share price, number of shares, principle, earned, and balance. They are parsed by each month's valuation using vanilla JavaScript and then visualized with D3.js.</p>
                           <p class="list-inline item-details">
-                            <a href="https://www.colorsworldwide.com/app">Live</a>
+                            <a href="http://johnrudell.com/sentinel/">Live</a>
+                            <span>|</span>
+                            <a href="https://github.com/johnrudell/sentinel">Code</a>
                           </p>
                           <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>

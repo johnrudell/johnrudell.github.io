@@ -304,17 +304,33 @@ footer {
       width: 22%;
       float: right; }
   .portfolio-modal .modal-content .item-details {
-    margin: 30px 0; }
+    margin: 30px 0;
+    display: flex;
+    justify-content: center; }
     .portfolio-modal .modal-content .item-details a {
       text-decoration: none;
+      background-color: #403D3C;
+      color: white;
       border: 1px solid #403D3C;
       padding: 5px;
       border-radius: 2px;
       transition: all ease 0.25s;
       -webkit-transition: all ease 0.25s;
-      -moz-transition: all ease 0.25s; }
+      -moz-transition: all ease 0.25s;
+      max-width: 100px;
+      justify-content: center; }
       .portfolio-modal .modal-content .item-details a:hover {
-        background-color: white; }
+        background-color: white;
+        color: #403D3C; }
+    .portfolio-modal .modal-content .item-details a:first-child {
+      flex: 1; }
+    .portfolio-modal .modal-content .item-details span {
+      align-self: center;
+      margin: 0 10px; }
+    .portfolio-modal .modal-content .item-details a:last-child {
+      flex: 1; }
+  .portfolio-modal .modal-content button:focus {
+    outline: none; }
 .portfolio-modal .close-modal {
   position: absolute;
   width: 75px;

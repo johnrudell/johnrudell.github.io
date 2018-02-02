@@ -469,18 +469,39 @@ footer {
     }
     .item-details {
       margin: 30px 0;
+      display: flex;
+      justify-content: center;
       a {
         text-decoration: none;
+        background-color: $primary-color;
+        color: white;
         border: 1px solid $primary-color;
         padding: 5px;
         border-radius: 2px;
         transition: all ease 0.25s;
         -webkit-transition: all ease 0.25s;
         -moz-transition: all ease 0.25s;
+        max-width: 100px;
+        justify-content: center;
         &:hover {
           background-color: $third-color;
+          color: $primary-color;
         }
       }
+      a:first-child {
+        flex: 1;
+      }
+      span {
+        // flex: 1;
+        align-self: center;
+        margin: 0 10px;
+      }
+      a:last-child {
+        flex: 1;
+      }
+    }
+    button:focus {
+      outline: none;
     }
   }
     .close-modal {
